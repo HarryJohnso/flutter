@@ -844,6 +844,7 @@ class _DayHeaders extends StatelessWidget {
         horizontal: _monthPickerHorizontalPadding,
       ),
       child: GridView.custom(
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: _dayPickerGridDelegate,
         childrenDelegate: SliverChildListDelegate(
